@@ -1,0 +1,235 @@
+.home {
+    font-family: poppins;
+    font-size: 63px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 217px;
+    background-color: #EEE5CF;
+    border-top: 12px solid black;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 35px;
+        grid-template-rows: 117px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 217px;
+    line-height: 80px;
+    border-right: 12px solid black;
+    font-family: modak;
+    font-size: 117px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 63px;
+        height: 117px;
+        line-height: 40px;
+
+    }
+}
+
+
+.grid-months {
+    font-family: poppins;
+    font-size: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 640px 640px 640px 640px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 52px;
+        grid-template-columns: 1fr 1fr;
+        ;
+        grid-template-rows: 220px 220px 220px 220px 220px 220px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 32px;
+        grid-template-rows: 120px 120px 120px 120px 120px 120px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background-color: transparent;
+}
+
+/*JANUARY*/
+.grid-jan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    background-color: #98B0C1;
+}
+.grid-jan:hover {
+    background-color: #7a91a1;
+}
+
+/*FEBRUARY*/
+.grid-feb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    background-color: #397C5A
+}
+.grid-feb:hover {
+    background-color: #2f644a
+}
+
+/*MARCH*/
+.grid-mar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    background-color: #D64C0E;
+}
+.grid-mar:hover {
+    background-color: #bb430c;
+
+}
+
+/*APRIL*/
+.grid-apr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #F58883
+}
+.grid-apr:hover {
+    background-color: #d47570
+}
+
+/*MAY*/
+.grid-may {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #EB9B10
+}
+.grid-may:hover {
+    background-color: #d18a0f
+}
+
+/*JUNE*/
+.grid-jun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-top: 0px;
+    background-color: #0E599D
+}
+.grid-jun:hover {
+    background-color: #0c4d87
+}
+
+/*JULY*/
+.grid-jul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #397C5A
+}
+.grid-jul:hover {
+    background-color: #2f644a
+}
+
+/*AUGUST*/
+.grid-aug {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #98B0C1
+}
+.grid-aug:hover {
+    background-color: #7a91a1
+}
+
+/*SEPTEMBER*/
+.grid-sep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-top: 0px;
+    background-color: #F58883
+}
+.grid-sep:hover {
+    background-color: #d47570
+}
+
+/*OCTOBER*/
+.grid-oct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #D64C0E
+}
+.grid-oct:hover {
+    background-color: #bb430c
+}
+
+/*NOVEMBER*/
+.grid-nov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    background-color: #0E599D
+}
+.grid-nov:hover {
+    background-color: #0c4d87
+}
+
+/*DECEMBER*/
+.grid-dec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid black;
+    border-top: 0px;
+    background-color: #EB9B10
+}
+.grid-dec:hover {
+    background-color: #d18a0f
+}

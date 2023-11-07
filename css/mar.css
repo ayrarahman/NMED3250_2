@@ -1,0 +1,506 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.medium-font {
+    font-weight: 500;
+}
+
+.nav {
+    font-family: poppins;
+    font-size: 36px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 12fr;
+    grid-template-rows: 90px;
+    background-color: #EEE5CF;
+    border-top: 12px solid black;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 20px;
+        height: 64px;
+    }
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+    line-height: 40px;
+    border-right: 12px solid black;
+    font-family: modak;
+    font-size: 55px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 30px;
+        height: 64px;
+        line-height: 30px;
+
+    }
+}
+
+
+
+.dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE5CF;
+    color: black;
+    font-family: poppins;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 36px;
+    border-right: 12px solid black;
+    cursor: pointer;
+
+    @media screen and (max-width: 1200px) {
+        height: 64px;
+        font-size: 20px;
+    }
+}
+
+.dropbtn:hover {
+    background-color: #DDD3BB;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    min-width: 160px;
+    background-color: #EEE5CF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.mar-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    background-color: #D64C0E;
+    border: 12px solid black;
+
+    @media screen and (max-width: 900px) {
+        height: 400px;
+    }
+}
+
+.mar {
+    font-family: poppins;
+    font-size: 100px;
+    margin: auto;
+
+    @media screen and (max-width: 900px) {
+        font-size: 80px;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 60px;
+    }
+}
+
+.mar-info {
+    font: 16px poppins;
+    position: relative;
+    top: -150px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 14px;
+        top: -100px;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 10px;
+        top: -90px;
+    }
+}
+
+/*GOODREADS*/
+.goodreads {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 495px;
+    background-color: #F58883;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-family: poppins;
+}
+
+.goodreads-title {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.goodreads-info {
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: auto;
+    position: relative;
+    top: -35px;
+
+
+    @media screen and (max-width: 1500px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.book-list li {
+    padding: 10px;
+    margin: 10px;
+    width: 132px;
+    height: 300px;
+    text-align: center;
+
+    @media screen and (max-width: 1500px) {
+        width: 15%;
+        /* adjust as needed */
+        height: auto;
+    }
+}
+
+.book-list li h5 {
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    top: -5px;
+
+}
+
+.book-list li p {
+    font-size: 12px;
+    position: relative;
+    top: -25px;
+}
+
+.book-list img {
+    width: 100%;
+    height: auto;
+}
+
+/*BOOKPAGE*/
+.bookpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 495px;
+    background-color: #EB9B10;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-family: poppins;
+}
+
+.bookpage-title {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.bookpage-info {
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: auto;
+    position: relative;
+    top: -35px;
+
+
+    @media screen and (max-width: 1500px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.book-list li {
+    padding: 10px;
+    margin: 10px;
+    width: 132px;
+    height: 300px;
+    text-align: center;
+
+    @media screen and (max-width: 1500px) {
+        width: 15%;
+        /* adjust as needed */
+        height: auto;
+    }
+}
+
+.book-list li h5 {
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    top: -5px;
+
+}
+
+.book-list li p {
+    font-size: 12px;
+    position: relative;
+    top: -25px;
+}
+
+.book-list img {
+    width: 100%;
+    height: auto;
+}
+
+/*BOOKCLUBS*/
+.bookclubs {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 495px;
+    background-color: #0E599D;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-family: poppins;
+}
+
+.bookclubs-title {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.bookclubs-info {
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: auto;
+    position: relative;
+    top: -35px;
+
+
+    @media screen and (max-width: 1500px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.book-list li {
+    padding: 10px;
+    margin: 10px;
+    width: 132px;
+    height: 300px;
+    text-align: center;
+
+    @media screen and (max-width: 1500px) {
+        width: 15%;
+        /* adjust as needed */
+        height: auto;
+    }
+}
+
+.book-list li h5 {
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    top: -5px;
+
+}
+
+.book-list li p {
+    font-size: 12px;
+    position: relative;
+    top: -25px;
+}
+
+.book-list img {
+    width: 100%;
+    height: auto;
+}
+
+/*AMAZON*/
+.amazon {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 495px;
+    background-color: #98B0C1;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-family: poppins;
+}
+
+.amazon-title {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.amazon-info {
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: auto;
+    position: relative;
+    top: -35px;
+
+
+    @media screen and (max-width: 1500px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.book-list li {
+    padding: 10px;
+    margin: 10px;
+    width: 132px;
+    height: 300px;
+    text-align: center;
+
+    @media screen and (max-width: 1500px) {
+        width: 15%;
+        /* adjust as needed */
+        height: auto;
+    }
+}
+
+.book-list li h5 {
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    top: -5px;
+
+}
+
+.book-list li p {
+    font-size: 12px;
+    position: relative;
+    top: -25px;
+}
+
+.book-list img {
+    width: 100%;
+    height: auto;
+}
+
+.reese {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 495px;
+    background-color: #397C5A;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    font-family: poppins;
+}
+
+.reese-title {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.reese img {
+    width: 235px;
+    height: auto;
+
+    @media screen and (max-width: 1500px) {
+        width: 175px;
+
+    }
+}
+
+.reese-info {
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.reese-book {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-right: 15px;
+}
+
+.reese-thoughts {
+    display: flex;
+    flex-direction: column;
+}
+
+.reese-thoughts h5 {
+    font-size: 25px;
+    top: -45px;
+    position: relative;
+}
+
+.reese-thoughts p {
+    font-size: 15px;
+    top: -100px;
+    position: relative;
+}
+
+.quote {
+    font-size: 30px;
+    color: #183828;
+
+    @media screen and (max-width: 780px) {
+        font-size: 15px;
+    }
+}
